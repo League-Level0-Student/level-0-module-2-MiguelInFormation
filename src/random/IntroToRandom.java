@@ -5,6 +5,8 @@ package random;
 
 import java.util.Random;
 
+import javax.swing.JOptionPane;
+
 public class IntroToRandom {
 	public static void main(String[] args) {
 		
@@ -23,7 +25,22 @@ public class IntroToRandom {
 
 		//1. Print out the value of r
 		
+		Random randy=new Random();
+		
+				r=randy.nextInt(50);
+				System.out.println(r);
+				
+				JOptionPane.showMessageDialog(null, "Your random number is......");
+				JOptionPane.showMessageDialog(null,r);
+				
+		
 		//2. Run the program.  What number appears in the console?
+				
+				
+				
 		//   Run it again. Is the number the same?
+		
+		
 	}
 }
+
