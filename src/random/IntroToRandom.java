@@ -27,7 +27,7 @@ public class IntroToRandom {
 		
 		Random randy=new Random();
 		
-				r=randy.nextInt(50);
+				r=randy.nextInt(310)-222;
 				System.out.println(r);
 				
 				JOptionPane.showMessageDialog(null, "Your random number is......");

@@ -6,6 +6,7 @@ package random;
 import java.awt.Dimension;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Random;
 
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
@@ -80,7 +81,11 @@ public class RockPaperScissors extends JPanel implements ActionListener{
 	//   Don't forget to create a Random object.
 	    
         //2. Change the value of opponentSelection to be a random number between 0 and 2; 
-        int opponentSelection = 0;
+    	
+    	Random randy=new Random();
+		
+        int opponentSelection = randy.nextInt(3);;
+        
         
         //3. Run the program again. Is the result different?
  
@@ -96,13 +101,13 @@ public class RockPaperScissors extends JPanel implements ActionListener{
                     + "The computer chose: " + convertSelection(opponentSelection) + ".\n");
         
         if(selection == opponentSelection){
-            JOptionPane.showMessageDialog(null, "No Winner.  Play again.");
+            JOptionPane.showMessageDialog(null, "try harder");
         }else if((selection == 0 && opponentSelection == 2) || 
                  (selection == 1 && opponentSelection == 0) ||
                  (selection == 2 && opponentSelection == 1)){
-            JOptionPane.showMessageDialog(null, "You Win!");
+            JOptionPane.showMessageDialog(null, "you beat a thing that has articifical intellegence. good joawb");
         }else{
-            JOptionPane.showMessageDialog(null, "You Lose!");
+            JOptionPane.showMessageDialog(null, "how do you lose to a computer?! do better.");
         }
     }
     
